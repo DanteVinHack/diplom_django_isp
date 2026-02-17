@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'main', 
 ]
 
 MIDDLEWARE = [
@@ -74,11 +75,11 @@ WSGI_APPLICATION = 'diplom_lds.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.msyql',
-        'NAME': "diplom",
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': "diplom_django",
         "USER": "dante",
         "PASSWORD": "Vu8t0Dar",
-        "HOST": "127.0.0.1",
+        "HOST": "localhost",
         "PORT": "3306"
     }
 }
